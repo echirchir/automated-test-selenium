@@ -1,0 +1,7 @@
+package com.codingcamp;
+
+import PathPage;
+
+public class JavaPathPage extends PathPage {
+
+}

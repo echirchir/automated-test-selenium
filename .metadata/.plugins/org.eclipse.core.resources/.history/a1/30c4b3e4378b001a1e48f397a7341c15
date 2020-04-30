@@ -1,0 +1,25 @@
+package com.codingcamp;
+
+import org.openqa.selenium.By;
+
+public class PathPages {
+	
+	static String url = "http://www.pluralsight.com/paths";
+	static String title = "Pluralsight | Personal Free Trial";
+
+	public void goTo() {	
+		Browser.goTo(url);
+	}
+
+	public void goToJavaPath() {
+		
+		Browser.driver.findElement(By.linkText("Start a FREE 10-day trial")).click();
+
+	}
+	
+	public boolean isAt() {
+		
+		return Browser.title().equals(title);
+	}
+
+}

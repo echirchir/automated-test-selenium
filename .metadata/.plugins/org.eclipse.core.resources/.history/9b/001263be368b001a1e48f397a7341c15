@@ -1,0 +1,29 @@
+package com.codingcamp;
+
+import static org.junit.Assert.*;
+
+import org.junit.After;
+import org.junit.Assert;
+import org.junit.Test;
+
+public class UnitTest {
+
+	@Test
+	public void canGoToHomePage() {
+		Pages.homePage().goTo();
+		Assert.assertTrue(Pages.homePage().isAt());
+	}
+	
+	@Test
+	public void canGoToPathsPage() {
+		Pages.pathsPage().goTo();
+		Pages.pathsPage().goToJavaPath();
+		assertTrue(Pages.pathPages().isAt());
+	}
+	
+	@After
+	public void close() {
+		Browser.close();
+	}
+
+}

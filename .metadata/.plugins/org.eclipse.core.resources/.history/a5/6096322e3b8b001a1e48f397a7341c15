@@ -1,0 +1,9 @@
+package com.codingcamp;
+
+public abstract class PathPage {
+	
+	public abstract void goTo();
+	
+	public abstract String pathName();
+
+}

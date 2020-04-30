@@ -1,0 +1,12 @@
+package com.codingcamp;
+
+public class PathPages {
+	
+	static String url = "http://www.pluralsight.com/paths";
+	static String title = "Java Language Fundamentals | Pluralsight";
+
+	public void goTo() {	
+		Browser.goTo(url);
+	}
+
+}
